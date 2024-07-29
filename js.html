@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+</head>
+<body>
+    <h1><a href="./index.html">WEB</a></h1>
+    <button id="btn" onclick="
+        // 배경색상 변경 함수
+        function setBgColor(color){
+            elBody.style.backgroundColor=color; 
+        }
+        // 기본글꼴 색상 변경 함수
+        function setColor(color){
+            elBody.style.color=color;
+        }
+        // 링크택스트 색상 변경 함수
+        function linkColor(color){
+            for(let idx=0;idx<=aryA.length-1;idx++){
+                aryA[idx].style.color=color;
+            }
+        }
+        //변경 택스트 함수
+        function changeTxt(txt){
+            changeBtn.innerHTML=txt;
+        }
+
+        let changeBtn = document.querySelector('#btn');
+        let elBody = document.querySelector('body');
+        let aryA = document.querySelectorAll('a'); 
+
+        if(changeBtn.innerHTML == '다크'){
+            // 다크화면            
+            setBgColor('#000000');
+            setColor('#ffffff');
+            linkColor('#add8e6');
+            changeTxt('라이트');
+        }else{
+            // 라이트화면            
+            setBgColor('#ffffff');
+            setColor('#000000');
+            linkColor('#0000ff');
+            changeTxt('다크');
+        }
+    ">다크</button>
+    <ol>
+        <li><a href="./html.html">HTML</a></li>
+        <li><a href="./css.html">CSS</a></li>
+        <li><a href="./js.html">javaScript</a></li>
+    </ol>
+    <h2>javaScript란 무엇인가?</h2>    
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa eaque molestiae ad recusandae delectus. Nesciunt sed facilis aliquam in consequatur minima illum qui? Nihil incidunt cumque hic quia porro iure a? Earum provident iure voluptates in molestias facere ullam, nulla ipsam omnis dolores iste sequi velit error qui aperiam corporis odit quasi itaque quia, enim at aut magni! Dolorem sed similique accusamus optio impedit sit, itaque quas neque quo quidem?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis eaque nam hic fuga, doloremque provident reiciendis placeat accusamus culpa dignissimos sequi, fugit in ea cumque expedita recusandae architecto voluptate laboriosam error quod sint esse perferendis incidunt excepturi? Ipsa ut obcaecati quo laudantium eum voluptatum pariatur dolore cupiditate tenetur odit eos, dolorem, minima necessitatibus quis eius corrupti magnam, molestiae dignissimos officiis? Error, quo. Suscipit labore vel ipsa harum saepe animi nihil porro alias. Aspernatur repellat consequuntur animi, non distinctio labore id, eos odio quam nam nisi et officia vel sint enim laudantium itaque voluptatem numquam illo iusto expedita. Aspernatur maxime odit asperiores voluptatibus. Explicabo nesciunt optio excepturi ipsam laudantium, alias quisquam dolor aliquam, non omnis ut laboriosam debitis velit facere et.</p>
+</body>
+</html>
